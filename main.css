@@ -23,6 +23,7 @@
 
 body {
   color: black;
+  font-size: 62.5%;
 }
 
 h1 {
@@ -44,19 +45,19 @@ header {
   background: transparent;
   transition: background 0.35s ease, padding 0.35s ease;
   z-index: 1000;
-  padding: 15px 5%;
+  padding: 15px 0;
 }
 
 .site-header.scrolled {
   background: white;
   backdrop-filter: blur(8px);
-  padding: 5px 5%;
+  padding: 5px 0;
 }
 
 .header-inner {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
-  padding: 16px 30px;
+  padding: 16px 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,11 +107,12 @@ header {
 
 .top-gradient {
   min-height: 80vh;
-  padding: 80px 20px;
+  padding: 80px 5%;
   text-align: center;
   background: linear-gradient(180deg, #e9fddf 0%, #ffffff 65%);
   background-size: 200% 200%;
   transition: background 3.5s ease-in-out;
+  width: 100%;
 }
 
 .top-gradient h1 {
@@ -223,6 +225,7 @@ header {
   text-align: center;
   color: #fff;
   padding: 2rem;
+  width: 100%;
 }
 
 .hero-exhibition h1 {
@@ -267,6 +270,7 @@ header {
   text-align: center;
   padding: 2rem;
   margin-top: 5rem;
+  width: 100%;
 }
 
 header h2 {
@@ -292,7 +296,8 @@ header p {
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
 }
 
 .card {
@@ -431,6 +436,7 @@ header p {
   justify-content: center;
   background: url("/images/Vector-2.png") center / cover no-repeat,
     linear-gradient(180deg, #83969d 0%, #e5dbdb 65%);
+  width: 100%;
 }
 
 .written {
@@ -477,6 +483,7 @@ header p {
   color: var(--text-light);
   padding: 70px 7% 28px;
   animation: fadeUp 1s ease forwards;
+  width: 100%;
 }
 
 .footer-container {
@@ -687,7 +694,7 @@ header p {
   }
 
   .hero-text p {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .float {
@@ -741,6 +748,9 @@ header p {
 
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
+  .exgall h1 {
+    font-size: 2.4rem;
+  }
   .img1 {
     top: 20px;
     left: 15px;
@@ -774,5 +784,9 @@ header p {
 
   header p {
     font-size: 1.4rem;
+  }
+
+  .reveal {
+    font-size: 1.8rem;
   }
 }
