@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Art Gallery</title>
-    <link href="./main.css" rel="Stylesheet">
-</head>
-<body>
-<section class="site-header">
-  <div class="header-inner">
-    <div class="logo">LUMINA</div>
+    <link href="./main.css" rel="Stylesheet" />
+  </head>
 
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#gall">Artworks</a>
-    <a href="#artworks">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</section>
+  <body>
+    <!-- ========== HEADER NAVIGATION ========== -->
+    <section class="site-header">
+      <div class="header-inner">
+        <div class="logo">LUMINA</div>
 
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gall">Artworks</a>
+          <a href="#artworks">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
 
+    <!-- ========== HERO SECTION ========== -->
+    <section class="top-gradient" id="home">
+      <div class="image-cluster">
+        <img src="/images/gallery1.jpg" class="float img1" />
+        <img src="/images/gallery2.jpeg" class="float img2" />
+        <img src="/images/gallery3.jpg" class="float img3" />
+        <img src="/images/gallery4.jpg" class="float img4" />
+      </div>
 
-<section class="top-gradient" id="home">
-  <div class="image-cluster">
+      <div class="hero-text">
+        <h1 class="reveal">
+          Transforming imagination into stunning masterpieces
+        </h1>
+        <p class="reveal fade">
+          We craft immersive digital experiences that blend artistry,
+          innovation, and storytelling — turning abstract imagination into
+          breathtaking visuals that inspire emotion and captivate audiences
+          worldwide.
+        </p>
+      </div>
+    </section>
 
-    <img src="/images/gallery1.jpg" class="float img1">
-    <img src="/images/gallery2.jpeg" class="float img2">
-    <img src="/images/gallery3.jpg" class="float img3">
-    <img src="/images/gallery4.jpg" class="float img4">
-
-  </div>
-
-  <div class="hero-text">
-   <h1 class="reveal">Transforming imagination 
-into stunning masterpieces</h1>
-    <p  class="reveal fade">
-     We craft immersive digital experiences that blend artistry, innovation, and storytelling — turning abstract imagination into breathtaking visuals that inspire emotion and captivate audiences worldwide.   
-     </p>
-  </div>
-</section>
-
- <div class="hero-exhibition" id="about">
-
+    <!-- ========== ABOUT / EXHIBITION SECTION ========== -->
+    <div class="hero-exhibition" id="about">
       <h1 class="reveal">Discover a new kind of Art</h1>
       <p class="reveal fade">
-       Step into a world where color, texture, and emotion collide. Our gallery celebrates bold expression, abstract visions, and visually striking artworks that challenge the ordinary. Each piece is carefully curated to spark curiosity, inspire imagination, and leave a lasting impression.
-        Whether you’re an art lover, a collector, or simply exploring beauty in new forms, this space invites you to experience art beyond boundaries.
+        Step into a world where color, texture, and emotion collide. Our gallery
+        celebrates bold expression, abstract visions, and visually striking
+        artworks that challenge the ordinary. Each piece is carefully curated to
+        spark curiosity, inspire imagination, and leave a lasting impression.
+        Whether you're an art lover, a collector, or simply exploring beauty in
+        new forms, this space invites you to experience art beyond boundaries.
         Explore. Feel. Discover.
       </p>
       <a href="#gallery">Browse Artworks</a>
     </div>
+
+    <!-- ========== ARTWORKS HEADER ========== -->
     <header id="artworks">
-      <p  class="reveal">Our Gallery: Stories</p>
-      <h2 class="reveal">Every creation tells a story through digital imagination</h2>
+      <p class="reveal">Our Gallery: Stories</p>
+      <h2 class="reveal">
+        Every creation tells a story through digital imagination
+      </h2>
     </header>
+
+    <!-- ========== MAIN GALLERY GRID ========== -->
     <main>
       <div class="gallery">
         <div class="container">
@@ -92,87 +104,86 @@ into stunning masterpieces</h1>
       </div>
     </main>
 
-<section class="exgall" id="gall" >
-    <h1 class="reveal">Exhibitions</h1>
-</section>
+    <!-- ========== EXHIBITIONS SECTION ========== -->
+    <section class="exgall" id="gall">
+      <h1 class="reveal">Exhibitions</h1>
+    </section>
 
-<section class="gallery" id="gallery"></section>
+    <section class="gallery" id="gallery"></section>
 
-<button id="loadMore" class="load-more-btn">
-  Load More Artworks
-</button>
+    <!-- ========== LOAD MORE BUTTON ========== -->
+    <button id="loadMore" class="load-more-btn">Load More Artworks</button>
 
-
-<div class="modal" id="modal">
-    <div class="modal-content">
+    <!-- ========== MODAL ========== -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
         <span id="close">&times;</span>
         <p id="artHistory"></p>
-    </div>
-</div>
-
-
-
-<section class="talks">
-  <div class="written">
-    <h1 class="reveal">
-      Where creativity meets timeless expression,
-      Designing art that lives beyond the digital space
-    </h1>
-  </div>
-</section>
-    <footer class="footer" id="contact">
-  <div class="footer-container">
-
-    <!-- Brand -->
-    <div class="footer-brand">
-      <h2>LUMINA</h2>
-      <p>
-        An Art Action Company typically operates in the space of live art,
-        performance, and social practice, often combining elements of
-        activism and community engagement.
-      </p>
-
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">i</a>
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Twitter">x</a>
       </div>
     </div>
 
-    <!-- Menu -->
-    <div class="footer-links">
-      <h4>Menu</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#artworks">Artworks</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <!-- ========== TALKS SECTION ========== -->
+    <section class="talks">
+      <div class="written">
+        <h1 class="reveal">
+          Where creativity meets timeless expression, Designing art that lives
+          beyond the digital space
+        </h1>
+      </div>
+    </section>
 
-    <!-- Resources -->
-    <div class="footer-links">
-      <h4>Resources</h4>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#">F.A.Q</a></li>
-      </ul>
-    </div>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2>LUMINA</h2>
+          <p>
+            An Art Action Company typically operates in the space of live art,
+            performance, and social practice, often combining elements of
+            activism and community engagement.
+          </p>
 
-  </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">i</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">x</a>
+          </div>
+        </div>
 
-  <!-- Bottom bar -->
-  <div class="footer-bottom">
-    <!-- <p>© Copyright 2024 Artmart | Design By Egens Lab</p> -->
-    <div class="footer-bottom-links">
-      <a href="#">Support Center</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
-</body>
-<script src="main.js"></script>
+        <!-- Menu -->
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#artworks">Artworks</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#">F.A.Q</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-links">
+          <a href="#">Support Center</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
