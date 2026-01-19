@@ -761,8 +761,10 @@ header p {
     top: 100px;
     left: 100px;
   }
+
   .img3{
-    display: none;
+    top: 50px;
+    left: 180px;
   }
    .img4{
     display: none;
@@ -797,6 +799,10 @@ header p {
   .reveal {
     font-size: 1.8rem;
   }
+
+  .load-more-btn {
+    padding: 12px 30px;
+    font-size: 16px;
 }
 
 
@@ -924,6 +930,12 @@ header p {
     display: flex !important;
     z-index: 10000;
   }
+
+  .talks {
+    background: url("/images/Vector-2.png") center / cover no-repeat,
+    linear-gradient(180deg, #83969d 0%, #e5dbdb 65%);
+    width: 100%;
+}
 }
 
 
