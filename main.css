@@ -803,8 +803,8 @@ header p {
   .load-more-btn {
     padding: 12px 30px;
     font-size: 16px;
+  }
 }
-
 
 /* ========================= */
 /* ARTWORK DETAIL PAGE */
@@ -937,5 +937,3 @@ header p {
     width: 100%;
 }
 }
-
-
