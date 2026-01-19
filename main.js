@@ -19,7 +19,6 @@ const loadMoreBtn = document.getElementById("loadMore");
 
 let page = 1;
 const limit = 9;
-
 async function fetchArtworks() {
   const url = `https://api.artic.edu/api/v1/artworks?page=${page}&limit=${limit}&fields=id,title,image_id,artist_display`;
 
@@ -36,17 +35,19 @@ async function fetchArtworks() {
 
     card.innerHTML = `<img src="${imgUrl}" alt="${art.title}">`;
 
-    card.onclick = () => {
-      artHistory.textContent =
-        art.artist_display || "No description available.";
-      modal.style.display = "flex";
-    };
+card.onclick = () => {
+  window.location.href = `artwork.html?id=${art.id}`;
+};
+
 
     gallery.appendChild(card);
   });
 
   page++; // IMPORTANT: move to next page
 }
+
+
+
 
 // LOAD FIRST SET AUTOMATICALLY
 fetchArtworks();
@@ -125,5 +126,18 @@ const observer = new IntersectionObserver(
 );
 
 revealItems.forEach(item => observer.observe(item));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+});
+
+
 
 
