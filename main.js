@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    document.body.classList.toggle("menu-active");
   });
 });
 

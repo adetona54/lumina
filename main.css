@@ -13,7 +13,7 @@
 /* ========================================
    GLOBAL STYLES
    ======================================== */
-   
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -24,6 +24,12 @@
 body {
   color: black;
   font-size: 62.5%;
+  overflow: none;
+   position: relative;
+}
+
+body.menu-active {
+  overflow: hidden;
 }
 
 h1 {
@@ -43,7 +49,9 @@ header {
   left: 0;
   width: 100%;
   background: transparent;
-  transition: background 0.35s ease, padding 0.35s ease;
+  transition:
+    background 0.35s ease,
+    padding 0.35s ease;
   z-index: 1000;
   padding: 15px 0;
 }
@@ -167,7 +175,9 @@ header {
   height: 260px;
   object-fit: cover;
   border-radius: 16px;
-  transition: transform 1.2s ease-in-out, opacity 1.5s ease;
+  transition:
+    transform 1.2s ease-in-out,
+    opacity 1.5s ease;
   animation: floaty 6s ease-in-out infinite;
   opacity: 0;
 }
@@ -214,7 +224,8 @@ header {
 .hero-exhibition {
   position: relative;
   height: 120vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/Birch-Sunrise-Close-Up-1080-x-1080.webp");
   background-size: cover;
   background-position: center;
@@ -250,7 +261,9 @@ header {
   color: #000;
   font-size: 1.8rem;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   border-radius: 4px;
 }
 
@@ -303,7 +316,9 @@ header p {
 .card {
   background: #dcdad0;
   cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .card:hover {
@@ -327,7 +342,9 @@ header p {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .artwork:hover {
@@ -349,7 +366,9 @@ header p {
   right: 0;
   height: 80%;
   width: 100%;
-  transition: top 0.3s ease, opacity 0.3s ease;
+  transition:
+    top 0.3s ease,
+    opacity 0.3s ease;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -384,7 +403,10 @@ header p {
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
 }
 
 .load-more-btn:hover {
@@ -434,7 +456,8 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/images/Vector-2.png") center / cover no-repeat,
+  background:
+    url("/images/Vector-2.png") center / cover no-repeat,
     linear-gradient(180deg, #83969d 0%, #e5dbdb 65%);
   width: 100%;
 }
@@ -457,7 +480,9 @@ header p {
 .reveal {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1.2s ease, transform 1.2s ease;
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
 }
 
 .reveal.show {
@@ -615,8 +640,6 @@ header p {
   }
 }
 
-
-
 /* ========================= */
 /* ARTWORK DETAIL PAGE */
 /* ========================= */
@@ -642,7 +665,7 @@ header p {
 .art-image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
 .art-info h1 {
@@ -669,28 +692,17 @@ header p {
   max-width: 520px;
 }
 
-/* MOBILE */
 
-/* Hamburger visible only on mobile */
+
+
 .hamburger {
-  display: none; /* hidden on desktop */
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 22px;
-  cursor: pointer;
+  display: none;
+  visibility: hidden;
 }
 
 .hamburger span {
-  display: block;
-  height: 3px;
-  background: black;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+  display: none;
 }
-
-/* ===== MOBILE NAV FORCE FIX ===== 
-/* ===== FORCE MOBILE NAV CONTENT VISIBILITY ===== */
 
 /* ========================================
    RESPONSIVE DESIGN
@@ -707,15 +719,15 @@ header p {
     top: 100px;
     left: 180px;
   }
- 
- 
+
   .img3 {
-  top: 50px;
-      left: 340px; 
+    top: 50px;
+    left: 340px;
   }
 
   .img4 {
-   top: 150px; left: 490px;
+    top: 150px;
+    left: 490px;
   }
   .footer-container {
     grid-template-columns: 1fr;
@@ -791,12 +803,12 @@ header p {
     left: 180px;
   }
   .img3 {
-  top: 50px;
-      left: 270px; 
+    top: 50px;
+    left: 270px;
   }
 
   .img4 {
-   top: 90px;
+    top: 90px;
     left: 370px;
   }
   .hero-exhibition h1 {
@@ -825,7 +837,7 @@ header p {
   }
 
   .site-header {
-    position: relative;
+   
     z-index: 9999;
   }
 
@@ -833,17 +845,27 @@ header p {
     position: fixed !important;
     top: 0;
     right: 0;
-    width: 50vw !important;
-    height: 70vh;
-    background: #ffffff !important;
+    width: 60%;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     gap: 15px;
-     transform: translateX(100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 9998;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: black;
+    border-radius: 3px;
+    transition: all 0.3s ease;
   }
 
   .nav-links.active {
@@ -861,14 +883,21 @@ header p {
 
   .hamburger {
     display: flex !important;
+    visibility: visible;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
     z-index: 10000;
   }
 
   .talks {
-    background: url("/images/Vector-2.png") center / cover no-repeat,
-    linear-gradient(180deg, #83969d 0%, #e5dbdb 65%);
+    background:
+      url("/images/Vector-2.png") center / cover no-repeat,
+      linear-gradient(180deg, #83969d 0%, #e5dbdb 65%);
     width: 100%;
-}
+  }
 
   .art-detail {
     grid-template-columns: 1fr;
@@ -894,14 +923,13 @@ header p {
     left: 100px;
   }
 
-  .img3{
+  .img3 {
     top: 50px;
     left: 180px;
   }
-   .img4{
+  .img4 {
     display: none;
   }
-
 
   .gallery {
     grid-template-columns: 1fr;
@@ -936,6 +964,28 @@ header p {
     padding: 12px 30px;
     font-size: 16px;
   }
+}
 
- 
+@media (max-width: 320px) {
+  .top-gradient h1 {
+    font-size: 2.4rem;
+  }
+
+  .top-gradient p {
+    font-size: 1rem;
+  }
+
+  .img1 {
+    top: 20px;
+    left: 5px;
+  }
+
+  .img2 {
+    top: 100px;
+    left: 70px;
+  }
+
+  .img3{
+    top: 50px;
+    left: 130px;}
 }
